@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>EXTREME Confirm-Shaming</title>
+</head>
+<body>
+    <article>
+        <h1>EXTREME Confirm-Shaming</h1>
+        <p>Confirm-Shaming is a popular <a href="https://en.wikipedia.org/wiki/Dark_pattern">dark pattern</a> which involves making the "no" option something bad to guilt you and manipulate you into clicking "yes"</p>
+        <button id="btn">Ok</button>
+    </article>
+
+    <div id="popup">
+        <div id="content"> 
+            <h1 id="title">Placeholder</h1>
+            <p id="p">If you are seeing this, an error occurred</p>
+            <p id="yes">yes</p>
+            <p id="no">no</p>
+            <!-- #cookie & #back are not displayed by default -->
+            <img src="./resources/cookie.png" id="cookie" alt="terribly drawn cookie">
+            <button id="back">Ok</button>
+        </div>
+
+        <!-- all #ad's are not displayed by default -->
+        <img src="./resources/ad1.jpg" id="ad1">
+        <img src="./resources/ad2.jpg" id="ad2">
+        <img src="./resources/ad3.jpg" id="ad3">
+    </div>
+
+    <!-- this div hides at the hidden top of the screen -->
+    <div id="notification">
+        <img src="./resources/silhouette.jpg" id="silhouette">
+        <span id="nname">contact name</span>
+        <span id="nmessage">if you are seeing this, an error occured.</span>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
