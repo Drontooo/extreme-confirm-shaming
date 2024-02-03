@@ -1,0 +1,143 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+h1 {
+    color: rgb(255, 41, 41);
+}
+
+button, #popup, #notification, #cookie, #ad1, #ad2, #ad3 {
+    user-select: none;
+}
+
+#btn {
+    border-radius: 100%;
+    transition: 0.5s;
+    font-size: 50px;
+    width: 10%;
+}
+
+#back {
+    border-radius: 100%;
+    transition: 0.5s;
+    font-size: 50px;
+    margin-left: 42%;
+    display: none;
+    bottom: 0%;
+    width: 15%;
+}
+
+#btn:hover, #back:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+#popup {
+    background-color: rgba(0, 0, 0, 0.692);
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+}
+
+#content {
+    background-color: grey;
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    right: 25%;
+    top: 15%;
+}
+
+#yes:hover, #no:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#yes {
+    color: rgb(19, 126, 19);
+    font-size: 120%;
+}
+
+#no {
+    color: rgb(87, 7, 7);
+    font-size: 70%;
+}
+
+#notification {
+    background-color: rgba(255, 255, 255, 0.418);
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    position: absolute;
+    height: 8%;
+    width: 100%;
+    top: -10%;
+}
+
+#silhouette {
+    position: absolute;
+    width: 2%;
+    left: 40%;
+    top: 25%;
+}
+
+#nname {
+    font-weight: 600;
+    position: absolute;
+    left: 42.5%;
+    top: 19.5%;
+}
+
+#nmessage {
+    position: absolute;
+    font-size: 12px;
+    left: 42.5%;
+    top: 49%;
+}
+
+#cookie {
+    display: none;
+    width: 5%;
+}
+
+#ad1, #ad2, #ad3 {
+    position: absolute;
+    cursor: pointer;
+    width: 30%;
+}
+
+#ad1 {
+    width: 23%;
+    left: 0.5%;
+    top: 0.5%
+}
+
+#ad2 {
+    width: 27%;
+    right: 0%;
+    top: 35%;
+}
+
+#ad3 {
+    bottom: 1%;
+    left: 10%;
+}
+
+@keyframes notify {
+    from { top: -8%; }
+    20% { top: 0%; }
+    80% { top: 0%; }
+    to { top: -8% }
+}
